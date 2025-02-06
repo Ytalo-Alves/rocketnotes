@@ -5,12 +5,15 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
 import GlobalStyle from './styles/global'
 import { Home } from "./pages/home";
+import { SignIn } from "./pages/signin";
+import { SignUp } from "./pages/signup";
+import { Profile } from "./pages/profile";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <Home />
+      <Profile />
     </ThemeProvider>
   </StrictMode>
 );

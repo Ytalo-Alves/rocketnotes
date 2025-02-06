@@ -10,7 +10,7 @@ export function Home() {
   return (
     <Container>
       <Brand>
-        <h1>rocketnotes</h1>
+        <h1>rocket notes</h1>
       </Brand>
 
       <Header></Header>
@@ -33,7 +33,15 @@ export function Home() {
 
       <Content>
         <Section title="Minhas Notas">
-          <Note data={{ title: "React", tags: [{id: '1', name:'react'}, {id: '2', name:'node'}] }} />
+          <Note
+            data={{
+              title: "React",
+              tags: [
+                { id: "1", name: "react" },
+                { id: "2", name: "node" },
+              ],
+            }}
+          />
         </Section>
       </Content>
 
